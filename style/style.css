@@ -1,12 +1,13 @@
 body{
 	background: #666b6e;
+	font-size: 16px;
 }
-a{
-	transition: all 500ms;
-	-webkit-transition: all 500ms;
-	-moz-transition: all 500ms;
-	-o-transition: all 500ms;
-	-ms-transition: all 500ms;
+a, i{
+	transition: all 300ms;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	-o-transition: all 300ms;
+	-ms-transition: all 300ms;
 }
 ul {
     list-style: none;
@@ -20,8 +21,20 @@ ul {
 .row{
 	display: flex;
 }
+.col_2{
+	width: 43%;
+	padding: 0 3%;
+	background: #a6a6a69c;
+	margin-bottom: 30px;
+}
+.col_2:nth-child(2n+1){
+	border-top-left-radius: 9%;
+}
+.col_2:nth-child(2n){
+	border-top-right-radius: 9%;
+}
 
-
+/*--- start top_block ---*/
 .top_block{
 	position: relative;
 }
@@ -84,6 +97,69 @@ ul {
     margin-left: 48%;
     font-size: 20px;
 }
+/*--- end top_block ---*/
+
+/*--- start about_me ---*/
+.about_me{
+	position: relative;
+	padding: 10px 20px;
+}
+.about_me .row{
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.about_me .short_my_info{
+	padding-top: 20px;
+	border-bottom: 2px dashed #686868;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+.about_me .short_my_info p{
+	margin: 8px;
+}
+.about_me .short_my_info p span {
+    font-weight: 800;
+}
+.about_me .skills{
+	border-bottom: 2px dashed #686868;
+	padding-bottom: 5px;
+	margin-bottom: 20px;	
+}
+.about_me ul{
+	padding-left: 15px;
+}
+.about_me ul li i{
+	font-size: 16px;
+}
+.about_me ul li:hover i{
+	color: #2fda26;
+}
+.about_me .education{
+	border-bottom: 2px dashed #686868;
+	padding-bottom: 5px;
+	margin-bottom: 20px;	
+}
+.about_me .education .education_info i{
+	float: left;
+	font-size: 28px;
+}
+.about_me .education .education_info:hover i{
+	color: #22801d;
+}
+.about_me .education .education_info p{
+	line-height: 23px;
+    padding-top: 7px;
+}
+.about_me .education .education_info p span{
+	font-weight: 600;
+}
+.about_me .languages ul li span{
+	font-weight: 600;
+}
+/*--- end about_me ---*/
+
+
+
 
 @media only screen and (max-width: 920px){
 	.top_block .row{
@@ -125,5 +201,16 @@ ul {
 	}
 	.social_block ul{
 		padding-left: 0;
+	}
+	.col_2{
+		width: 94%;
+		border-top-left-radius: 25px !important;
+		border-top-right-radius: 25px !important;
+	}
+	.about_me ul li i{
+		color: #22801d;
+	}
+	.about_me .education .education_info i{
+		color: #22801d;
 	}
 }
