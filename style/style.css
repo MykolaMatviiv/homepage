@@ -1,6 +1,13 @@
 body{
 	background: #666b6e;
 }
+a{
+	transition: all 500ms;
+	-webkit-transition: all 500ms;
+	-moz-transition: all 500ms;
+	-o-transition: all 500ms;
+	-ms-transition: all 500ms;
+}
 ul {
     list-style: none;
 }
@@ -15,7 +22,9 @@ ul {
 }
 
 
-
+.top_block{
+	position: relative;
+}
 .top_block .row{
 	padding-top: 50px;
 	height: 350px;
@@ -54,6 +63,9 @@ ul {
     font-size: 30px;
     margin: 3px 10px;
     color: #797b7b;
+}
+.social_block li a:hover .fab, .social_block li a:hover .fas{
+	color: #000;
 }
 .top_block .name_block{
 	position: absolute;
