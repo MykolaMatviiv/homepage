@@ -50,6 +50,7 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+
   .main-info,
   .contact_info_container {
     flex-direction: column;
@@ -263,4 +264,26 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+/* Strengths */
+.strengths__header {
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.strengths__list {
+  color: var(--secondary-text-color);
+  padding-left: 20px;
+}
+
+.strengths__item {
+  color: var(--secondary-text-color);
+}
+
+.strengths__item-subheader {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-style: italic;
 }
